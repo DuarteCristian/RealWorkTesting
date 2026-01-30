@@ -6,5 +6,19 @@
     "userFail": {
         "username": "teste",
         "password": "test123"
+    },
+    "userRegisterSucess": {
+        "firstName": "ted",
+        "lastName": "parisiense",
+        "username": "Heath93",
+        "password": "s3cret",
+        "confirmPassword": "s3cret"
+    },
+    "userRegisterFail": {
+        "firstName": "cristian",
+        "lastName": "Duarte",
+        "username": "crisDuarte",
+        "password": "test123",
+        "confirmPassword": "test1234"
     }
 }
