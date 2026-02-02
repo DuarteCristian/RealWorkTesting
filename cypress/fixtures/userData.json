@@ -7,7 +7,7 @@
         "username": "teste",
         "password": "test123"
     },
-    "userRegisterSucess": {
+    "userRegisterSuccess": {
         "firstName": "ted",
         "lastName": "parisiense",
         "username": "Heath93",
@@ -20,5 +20,9 @@
         "username": "crisDuarte",
         "password": "test123",
         "confirmPassword": "test1234"
+    },
+    "userDepositSuccess": {
+        "username": "Darrel Ortiz",
+        "amount": 10000
     }
 }
