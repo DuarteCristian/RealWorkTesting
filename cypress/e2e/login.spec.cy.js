@@ -2,10 +2,12 @@ import cadastro from "../Pages/cadastro";
 import loginPage from "../Pages/loginPage";
 import userData from "../fixtures/userData.json";
 import deposito from "../Pages/deposito";
+import historico from "../Pages/historico";
 
 const LoginPage = new loginPage();
 const Cadastro = new cadastro();
 const Deposito = new deposito();
+const Historico = new historico();
 describe('Login com sucesso', () => {
   it('Deve fazer login com um usuário válido', () => {
     cy.visit('http://localhost:3000/');
@@ -35,11 +37,23 @@ describe('Login com sucesso', () => {
         LoginPage.LoginWithAnyUser(userData.userSucess.username, userData.userSucess.password);
         Deposito.realizarDeposito(userData.userDepositSuccess.username, userData.userDepositSuccess.amount);
       });
+      describe("visualizar historicos de transferencias", () => {
+        it("deve visualizar o historico com sucesso", () => {
+          cy.visit("http://localhost:3000/");
+          LoginPage.LoginWithAnyUser(userData.userSucess.username, userData.userSucess.password);
+          Historico.verficarHistorico();
+        });
+        describe("tentar visualizar historicos de transferencias sem ter feito nenhuma transferencia", () => {
+          it("visualizar usuario sem historico de transferencias", () => {
+            cy.visit("http://localhost:3000/");
+            LoginPage.LoginWithAnyUser(userData.userNoTransfer.username, userData.userNoTransfer.password);
+            Historico.historicoVazio();
+          });
 
+        });
+
+
+      });
     });
-
-
   });
 });
-
-

@@ -7,12 +7,12 @@ class Cadastro {
             userPasswordField: "[name='password']",
             confirmPasswordField: "[name='confirmPassword']",
             RegisterButton: "[type='submit']",
-            CadatroTitle: "[data-test='signup']"
+            CadastroTitle: "[data-test='signup']"
         }
         return selectors;
     }
     registerNewUser(firstName, lastName, userName, password, confirmPassword) {
-        cy.get(this.selectorsList().CadatroTitle).click();
+        cy.get(this.selectorsList().CadastroTitle).click();
         cy.get(this.selectorsList().FirstNameField).type(firstName);
         cy.get(this.selectorsList().LastNameField).type(lastName);
         cy.get(this.selectorsList().UserNameField).type(userName);
@@ -21,7 +21,7 @@ class Cadastro {
         cy.get(this.selectorsList().RegisterButton).click();
     }
     registerFail(firstName, lastName, userName, password, confirmPassword) {
-        cy.get(this.selectorsList().CadatroTitle).click();
+        cy.get(this.selectorsList().CadastroTitle).click();
         cy.get(this.selectorsList().FirstNameField).type(firstName);
         cy.get(this.selectorsList().LastNameField).type(lastName);
         cy.get(this.selectorsList().UserNameField).type(userName);
