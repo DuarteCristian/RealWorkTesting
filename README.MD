@@ -7,7 +7,7 @@ npm istall
 ```
 >NOTE:
 >
-> É Necessario ter o **Node** insatalado
+> É Necessario ter o **Node** instalado
 
 ## Running
 ```bash
