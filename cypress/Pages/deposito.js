@@ -14,8 +14,8 @@ class deposito {
     }
     realizarDeposito(username, amount,) {
         cy.get(this.selectorsList().depositoButton).click();
-        cy.get(this.selectorsList().campProcurar).type(username);
-        cy.get(this.selectorsList().usualyField).click();
+        cy.get(this.selectorsList().campProcurar).click(({ force: true })).type(username);
+        cy.get(this.selectorsList().usualyField).click(({ force: true }));
         cy.get(this.selectorsList().amountField).type(amount);
         cy.get(this.selectorsList().notaField).eq(1).type("teste success");
         cy.get(this.selectorsList().submitButton).eq(1).click();

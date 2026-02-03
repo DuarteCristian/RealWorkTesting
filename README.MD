@@ -1,0 +1,2 @@
+# Trabalho Real Work Testing
+Esse projeto usa Cypress para automatizar feature de login , cadastro e tranferencias bancarias.  O Cypress é um framework de testes ponta a ponta baseado em JavaScript que permite aos desenvolvedores escrever testes e executá-los em um navegador real.
