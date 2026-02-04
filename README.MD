@@ -30,11 +30,7 @@ Garantindo mais qualidade e agilidade nos processos de testes usando o Cypress
 
 Durante o desenvolvimento deste projeto foi possível aprofundar conhecimentos em:
 
-Automação de testes end-to-end
-Estruturação de projetos Cypress
-Boas práticas de QA
-Versionamento com Git
-Escrita de testes mais legíveis e reutilizáveis
+Automação de testes end-to-end ,Estruturação de projetos Cypress, Boas práticas de QA, Versionamento com Git e Escrita de testes mais legíveis e reutilizáveis
 
 ## Funcionalidades testadas
 
