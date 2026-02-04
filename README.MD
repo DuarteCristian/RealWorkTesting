@@ -26,6 +26,16 @@ npx cypress run
 Obejtivo do projeto é Por em pratica todo o aprendizado do curso Guardião da Qualidade - LumeStack, fazendo testes automatizados das funcionalidades do programa.
 Garantindo mais qualidade e agilidade nos processos de testes usando o Cypress
 
+## Aprendizados
+
+Durante o desenvolvimento deste projeto foi possível aprofundar conhecimentos em:
+
+Automação de testes end-to-end
+Estruturação de projetos Cypress
+Boas práticas de QA
+Versionamento com Git
+Escrita de testes mais legíveis e reutilizáveis
+
 ## Funcionalidades testadas
 
 ```bash
@@ -34,6 +44,15 @@ Cadastro de usuarios,
 transferências bancárias,
 Historico de transferências.
 ```
+## Boas práticas aplicadas
+```bash
+Page Object Model
+Separação de massa de dados (fixtures)
+Reutilização de código
+Testes independentes
+Organização em camadas
+```
+
 ## Tecnologias utilizadas
 ``` bash
 Cypress,
